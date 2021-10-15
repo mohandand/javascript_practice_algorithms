@@ -5,7 +5,7 @@ var twoSum = function(nums, target) {
             for(j=1;j<=nums.length;j++)
             {
                 
-                if(nums[i] + nums[j] ==target)
+                if(nums[i] + nums[j] ==target && i!=j)
                     {
                         return arry = [i,j];
                     }
@@ -14,6 +14,4 @@ var twoSum = function(nums, target) {
     
 };
 
-
-
-console.log(twoSum([2,3,4,5] , 5));
+console.log(twoSum([2,5,5,11] , 10));
