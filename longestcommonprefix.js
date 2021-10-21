@@ -1,7 +1,5 @@
 var longestCommonPrefix = function(strs) {
-  if (s.length === 0) return true
-  if (s.length === 1) return false
-  if (s.length % 2 !== 0) return false
+    if (!strs.length) return '';
     let prefix = '';
     //let maxPrefixLength = Math.min(...strs.map(str => str.length));
     for (let i = 0; i < strs[0].length; i++) {

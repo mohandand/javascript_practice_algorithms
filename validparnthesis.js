@@ -1,10 +1,12 @@
 
 const symbols = {
     "(" : ")",
-    ")":")",
     "{" : "}",
-    "}" : "}",
     "[": "]",
+}
+const symbols1 = {
+    ")" : ")",
+    "}" : "}",
     "]": "]",
 }
 var isValid = function(s) {
@@ -13,10 +15,10 @@ var isValid = function(s) {
   
   for(i=0;i<s.length;i++)
   {
-      if(symbols[s[i]]===symbols[s[i+1]]  )
+      if(symbols[s[i]]===symbols1[s[i+1]]  )
       {
             i++;
-      } else if (symbols[s[i]]===symbols[s[s.length - (i+1)]]){
+      } else if (symbols[s[i]]===symbols1[s[s.length - (i+1)]]){
           
         count++;
       }
@@ -27,4 +29,4 @@ var isValid = function(s) {
         return true;
 };
 
-console.log(isValid("({[]})"));
+console.log(isValid("){"));
