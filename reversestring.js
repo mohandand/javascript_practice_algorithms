@@ -9,16 +9,22 @@
 // }
 
 // console.log(revstring("Mohan"));
-let rev= '';
-const revString = (str) => {
-    for(let char of str)
-    {
-        rev = char +rev;
-    }
-    return rev;
+//second Method
+// let rev= '';
+// const revString = (str) => {
+//     for(let char of str)
+//     {
+//         rev = char +rev;
+//     }
+//     return rev;
+// }
+
+// console.log(revString("Raju"));
+
+//one liner-third method
+
+const revstring = (str) => {
+
+    return str.split("").reverse().join("");
 }
-
-console.log(revString("Raju"));
-
-//one liner:
-//console.log(str.split("").reverse().join(""));
+console.log(revstring("RAJU"));
