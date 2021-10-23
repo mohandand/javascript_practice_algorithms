@@ -1,3 +1,4 @@
+//Approach-1
 // const revstring = (str) => {
 
 //     let array = str.split("");
