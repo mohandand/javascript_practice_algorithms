@@ -1,5 +1,5 @@
 
-
+//Appraoch-1
 // const firstNonRepeatChar = (string) => {
 
 //    let  strarray = string.split('');
@@ -53,7 +53,7 @@ const firstNonRepeatChar = (string) => {
         {
             if(item in obj)//checkin whether property name in object or not
             {
-                console.log(item in obj);
+                //console.log(item in obj);
                 obj[item] = obj[item]+1;
             }
             else
@@ -61,6 +61,15 @@ const firstNonRepeatChar = (string) => {
                 obj[item] =1;
             }
         }
-        return obj;
-}
+        console.log(obj);
+//returning object property whos values is one
+     for(let elm in obj)
+         {
+                 if(obj[elm] === 1)
+                  {
+                     return elm;
+                      }
+        }
+       return -1;
+  }
 console.log(firstNonRepeatChar("aabcbcdeedfadad"));
