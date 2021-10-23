@@ -23,7 +23,7 @@
 // console.log(revString("Raju"));
 
 //one liner-third method
-
+//Approach-3
 const revstring = (str) => {
 
     return str.split("").reverse().join("");
