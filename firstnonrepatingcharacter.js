@@ -62,6 +62,7 @@ const firstNonRepeatChar = (string) => {
             }
         }
         console.log(obj);
+//obj[item] = obj[item] = 1 || obj[item] =1 (this line do same as above content)
 //returning object property whos values is one
      for(let elm in obj)
          {
