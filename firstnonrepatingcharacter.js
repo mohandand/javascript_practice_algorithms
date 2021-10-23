@@ -1,27 +1,66 @@
 
 
-const firstNonRepeatChar = (string) => {
+// const firstNonRepeatChar = (string) => {
 
-   let  strarray = string.split('');
+//    let  strarray = string.split('');
 
-    len = strarray.length;
+//     len = strarray.length;
     
 
-    for(let i=0;i<len;i++)
-    {
-        let seenDuplicate = false;
-        
-        for(let j=1;j<len;j++){
-              if(strarray[i] == strarray[j] && i!==j)
-                 {
-                    seenDuplicate = true;
-                    break;
-                }
-                
-            }
-            if (!seenDuplicate) {return strarray[i];}
-    }
-    return '-';
-}
+//     for(let i=0;i<len;i++)
+//     {
+//         let seenDuplicate = false;
 
+//         for(let j=1;j<len;j++){
+//               if(strarray[i] == strarray[j] && i!==j)
+//                  {
+//                     seenDuplicate = true;
+//                     break;
+//                 }
+                
+//             }
+//             if (!seenDuplicate) {return strarray[i];}
+//     }
+//     return '-';
+// }
+
+// console.log(firstNonRepeatChar("aabcbcdeedfadad"));
+
+//Appraoch-2
+
+// const firstNonRepeatChar = (string) => {
+//     let  strarray = string.split('');
+//     len=strarray.length;
+//      for(let item of strarray)
+//          {
+//               let temp1 = strarray.indexOf(item);
+//               let temp2 = strarray.lastIndexOf(item);
+
+//               if(temp1===temp2)
+//               {
+//                   return item;
+//               }
+
+//           }
+//           return '-';
+// }
+// console.log(firstNonRepeatChar("aabcbcdeedfadad"));
+
+//Appraoch-3
+const firstNonRepeatChar = (string) => {
+    const obj= {}
+    for(let item of string)
+        {
+            if(item in obj)//checkin whether property name in object or not
+            {
+                console.log(item in obj);
+                obj[item] = obj[item]+1;
+            }
+            else
+            {
+                obj[item] =1;
+            }
+        }
+        return obj;
+}
 console.log(firstNonRepeatChar("aabcbcdeedfadad"));
