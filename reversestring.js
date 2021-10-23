@@ -10,7 +10,7 @@
 // }
 
 // console.log(revstring("Mohan"));
-//second Method
+//Approach-2
 // let rev= '';
 // const revString = (str) => {
 //     for(let char of str)
