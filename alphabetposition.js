@@ -1,5 +1,5 @@
 //basciall we are writing position of albet for all characters in a given string.
-//like a=1 and b=2 c=3 d=4 e=4 f=4 ..etc
+//like a=1 and b=2 c=3 d=4 e=4 f=4 g=5 ..etc
 let alpha = "abcdefghijklmnopqrstuvwxyz";
 let alphaarray = alpha.split("");
 //console.log(alphaarray);
