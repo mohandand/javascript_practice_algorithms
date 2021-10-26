@@ -2,6 +2,18 @@
  highest number of times.
 
  Ex: Input:[1,2,3,4,4,4,5,6,7] o/p: 4 as four repaeated highest number of times
+
+ Algorithm:
+
+ ->Creating an object key value pair and key is element in array and
+  value is howmany times its repated.
+
+-> Then checking all object values buy going through object and 
+storing highest key value
+
+->Finally using object.keys and find method getting the key name 
+using value of that key.
+
 */
 
 const highestRepeatedNumber = (array) =>{
