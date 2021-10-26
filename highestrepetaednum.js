@@ -1,6 +1,7 @@
 /*Question: In given Array print the number which is reapeted for
  highest number of times.
- 
+
+ Ex: Input:[1,2,3,4,4,4,5,6,7] o/p: 4 as four repaeated highest number of times
 */
 
 const highestRepeatedNumber = (array) =>{
