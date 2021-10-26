@@ -1,3 +1,8 @@
+/*Question: In given Array print the number which is reapeted for
+ highest number of times.
+ 
+*/
+
 const highestRepeatedNumber = (array) =>{
 
     const obj={};
