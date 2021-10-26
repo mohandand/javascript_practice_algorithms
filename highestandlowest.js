@@ -4,5 +4,4 @@ const highAndlow = (array) => {
         return   array;
 
 }
-
 console.log(highAndlow([100,2,300,23,45,2]));
