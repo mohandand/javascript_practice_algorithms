@@ -1,4 +1,4 @@
-/* Question: Find length
+/* Question: Find length of last word of the Sentensce
 
 */
 
