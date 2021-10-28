@@ -18,7 +18,7 @@ myobj.someMethod = function(){
 - our Object did, so this will refer to the Object that called it: */
 
 // My Notes Examples.
-
+//Implicit Binding
 var me = {
     name:"Mohan",
     age:27,
@@ -27,4 +27,19 @@ var me = {
     }
 }
 
-me.sayName();//
+//me.sayName();// give out put as Mohan here me refered as this inside sayName Fun.
+
+//Explicit Binding  here we take function which is outsode object
+
+var sayName = function() {
+    console.log(this.name);
+}
+
+var Mohan ={
+    name:"Mohan",
+    age:27
+}
+
+sayName.call(Mohan);//by using call we can  call sayName function in context of Mohan object
+
+
