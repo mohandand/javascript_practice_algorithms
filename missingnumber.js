@@ -7,7 +7,7 @@ var missingNumber = (nums) => {
         }
         let nums1 = nums.join("");
         for(i=0;i<arra.length;i++){
-            let status = nums1.includes(arra[i]);
+            let status = nums.includes(arra[i]);
             if(!status){
                 return arra[i];
             }
