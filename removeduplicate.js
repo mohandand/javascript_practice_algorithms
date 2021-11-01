@@ -1,5 +1,5 @@
 
-//Approach-1 brute
+//Approach-1 brute force approch
 
 // let a = [];
 
