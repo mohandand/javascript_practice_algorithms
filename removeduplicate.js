@@ -1,5 +1,5 @@
 
-//Approach-1 
+//Approach-1 brute
 
 // let a = [];
 
@@ -39,16 +39,16 @@
 
 //Approach-3
 
-// const removeDuplicate = (array) =>{
-//     let obj = {};
-//   for(let i of array)
-//   {
-//       //console.log(i);
-//       obj[i] = "hi";  //key as to be unique it wont store any duplicates.
-//   }
-//  let obj1 = Object.keys(obj);
-//  return obj1;
-// }
+const removeDuplicate = (array) =>{
+    let obj = {};
+  for(let i of array)
+  {
+      //console.log(i);
+      obj[i] = "hi";  //key as to be unique it wont store any duplicates.
+  }
+ let obj1 = Object.keys(obj);
+ return obj1;
+}
 // console.log(removeDuplicate([1,2,3,4,5,3,5,3,2,1]));
 
 //Approach-4
