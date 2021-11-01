@@ -51,7 +51,7 @@ const removeDuplicate = (array) =>{
 }
 // console.log(removeDuplicate([1,2,3,4,5,3,5,3,2,1]));
 
-//Approach-4
+//Approach-4 set dont contain unique values
 
 let a = [1,2,3,4,5,3,5,3,2,1];
 
