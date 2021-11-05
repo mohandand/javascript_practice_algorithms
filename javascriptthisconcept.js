@@ -4,7 +4,7 @@
 
 myfunction(); //This will give out as window object.
 
-Inside Object literals, the this value will always refer to its own Object. */
+Inside Object literals, the this value will always refer to its own Object.*/
 
 /* 
 var myobj = {name: "My thing"};
