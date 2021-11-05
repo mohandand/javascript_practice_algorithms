@@ -16,7 +16,7 @@
 // }
 
 // console.log(removeDuplicate([1,2,3,4,5,3,5,3,2,1]));
- //Approach-2 sort and then delete
+ //Approach-2 sort and then delete duplicate values
 
 // const removeDuplicate = (array) => {
 // array.sort();
