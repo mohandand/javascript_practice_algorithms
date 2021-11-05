@@ -37,7 +37,7 @@
 // }
 // console.log(removeDuplicate([1,2,3,4,5,3,5,3,2,1]));
 
-//Approach-3 object based approach
+//Approach-3 object based approach efficient approach
 
 const removeDuplicate = (array) =>{
     let obj = {};
