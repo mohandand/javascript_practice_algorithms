@@ -16,4 +16,4 @@ var generate = function(numrows){
         return pascalT
 }
 
-console.log(generate(8));
+console.log(generate(9));
