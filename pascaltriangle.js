@@ -11,9 +11,9 @@ var generate = function(numrows){
             let rowbaove = pascalT[i-1];
             row[j] = rowbaove[j] + rowbaove[j-1];
         } 
-        pascalT[i] = row;
+        pascalT[i] = row; //adding each row as array to main array
     }
         return pascalT
 }
 
-console.log(generate(9));
+console.log(generate(4));
