@@ -16,3 +16,6 @@ var twoSum = function(nums, target) {
 
 
 console.log(twoSum([2,5,5,11] , 10));
+
+
+
