@@ -3,4 +3,4 @@ for(let triangle=1;triangle.length<=6;triangle=triangle + "*")
     console.log(triangle);
 }
 
-//star pattern simple methood
+//star pattern simple methood with
