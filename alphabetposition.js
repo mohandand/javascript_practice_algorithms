@@ -1,4 +1,4 @@
-//basciall we are writing position of albet for all characters in a given string.
+//Basciall we are writing position of albet for all characters in a given string.
 //like a=1 and b=2 c=3 d=4 e=4 f=5 and g=6 ..etc
 let alpha = "abcdefghijklmnopqrstuvwxyz";
 let alphaarray = alpha.split("");
