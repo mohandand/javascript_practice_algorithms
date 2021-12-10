@@ -8,4 +8,4 @@ function vowelscount(str){
     return count;
 }
 
-console.log(vowelscount("aeioubbbb"))
+console.log(vowelscount("aeioubbbbb"))
