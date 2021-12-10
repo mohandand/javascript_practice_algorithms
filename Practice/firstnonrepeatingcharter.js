@@ -4,8 +4,10 @@ string.split("").forEach((s) => {
     obj[s] ? obj[s]++ : obj[s] =1
 })
         let values = Object.values(obj);
-     for(item of values){
-         if(item === 1){
+
+        console.log()
+     for(item in obj){
+         if(obj[item] === 1){
              return item;
          }
      }
