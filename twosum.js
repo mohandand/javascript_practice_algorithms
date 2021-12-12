@@ -24,7 +24,10 @@ var twoSum = function(nums,target){
     var map = {};
     for(var i=0;i<nums.length;i++){
         var m = target-nums[i];
+        console.log(m);
         if(map[m] !==undefined){
+            console.log(`${map[m]} and ${i}`);
+            console.log(map);
             return [map[m],i];
         }
         map[nums[i]]=i;
