@@ -13,3 +13,4 @@ string.split("").forEach((s) => {
      }
 }
 console.log(firstnonrepeating("aaabbccde"));
+//
