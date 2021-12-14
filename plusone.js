@@ -21,3 +21,7 @@ return digits;
 };
 
 console.log(plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,9,9,9]))
+
+/* Explanation: first we check last digit is qqual 9 if that is true
+then we need to set that to zero and check next last digit and if its not equal to zero then
+increase it and return the value */
