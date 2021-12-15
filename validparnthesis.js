@@ -4,5 +4,5 @@ var isValid = function(s){
         '{':'}',
         '[':']'
     }
-    let
+    let heap= [];
 }
