@@ -29,7 +29,7 @@ let productofarray = function(array){
             rightarray.unshift(leftarray[0]*array[i-1]);
         }
     }   
-  //Populating solution
+  //Populating solution from
   
     for(i=0;i<leftproduct.length;i++)
     {
