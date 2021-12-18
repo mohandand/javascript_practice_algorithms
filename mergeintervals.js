@@ -1,4 +1,4 @@
-//Merging Intervals
+//Merging Intervals progra
 
 var merge = function(intervals){
     var res=[];
