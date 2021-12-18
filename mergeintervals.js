@@ -1,3 +1,5 @@
+//Merging Intervals
+
 var merge = function(intervals){
     var res=[];
     intervals.sort(function(a,b) {
