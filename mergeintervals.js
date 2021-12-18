@@ -1,4 +1,5 @@
-//Merging Intervals program
+//Merging Intervals program for
+
 
 var merge = function(intervals){
     var res=[];
