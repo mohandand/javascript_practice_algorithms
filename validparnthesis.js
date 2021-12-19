@@ -1,3 +1,4 @@
+//Valid
 var isValid = function(s){
     let bracket = {
         '(':')',
