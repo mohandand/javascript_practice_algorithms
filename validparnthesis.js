@@ -1,4 +1,4 @@
-//Valid
+//Valid Paranthesis
 var isValid = function(s){
     let bracket = {
         '(':')',
