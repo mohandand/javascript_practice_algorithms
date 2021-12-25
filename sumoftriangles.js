@@ -23,4 +23,4 @@ function sumTriangularNumbers(n) {
 // 07 08 09 [10]
 // 11 12 13 14 [15]
 // 16 17 18 19 20 [21]
-// Example Instance: If 4 is given: 1 + 3 + 6 + 10 = 2
+// Example Instance: If 4 is given: 1 + 3 + 6 + 10 = 20
