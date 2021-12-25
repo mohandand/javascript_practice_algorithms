@@ -8,7 +8,7 @@ function sumTriangularNumbers(n) {
 
   console.log(sumTriangularNumbers(3));
 
-//   function sumTriangularNumbers(n) {
+//   function sumTriangularNumberss(n) {
 //     var sum = 0;  
 //     for(var i = 1; i <= n; i++)
 //     {

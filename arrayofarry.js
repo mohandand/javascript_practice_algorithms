@@ -1,3 +1,5 @@
+
+
 var obj1 = {
     var:[1,2,3,4],
     var1:[2,3,4,5],
@@ -24,9 +26,9 @@ var obj1 = {
         concatedarray = concatedarray.concat(keys1[i]);
     }
 
-    // result = concatedarray.filter((item) => {
-    //     return item.includes(find);
-    // })
+    result = concatedarray.filter((item) => {
+              return item.includes(find);
+    })
     console.log(concatedarray);
     console.log(result);
     
