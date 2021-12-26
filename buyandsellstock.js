@@ -5,6 +5,11 @@ function buyandsellstock(prices){
     prices[0] = 0;
     let profit = 0;
     for(let i=1;i<prices.length;i++){
-        
+        if(buy>prices[i]){
+            buy=prices[i];
+            profit=0;
+        }else{
+            profit = Math.max()
+        }
     }
 }
