@@ -7,11 +7,10 @@ function buyandsellstock(prices){
     for(let i=1;i<prices.length;i++){
         if(buy>prices[i]){
             buy=prices[i];
-            profit=0;
         }else{
             profit = Math.max(prices[i]-buy ,profit)
         }
     }
     return profit;
 }
-console.log(buyandsellstock([7,1,5,3,6,4]));
+console.log(buyandsellstock([2,4,1]));

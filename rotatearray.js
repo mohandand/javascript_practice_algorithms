@@ -1,12 +1,11 @@
 function rotatearray(array , r){
     let res=[];
 
-    for(let i=r ; i<=r ;i--){
-        let temp = [array[i]]
-        res = [...temp, array];
-        res.pop();
+    for(let i=0 ; i<r ;i++){ 
+        array.unshift(array[array.length-1]);
+        array.pop();
     }
-    return res;
+    return array;
 }
 
 console.log(rotatearray([1,2,3,4,5,6,7],3))
