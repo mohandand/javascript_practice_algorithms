@@ -3,9 +3,9 @@
 var singleNumber = function(nums) {
   
     var obj = {}
-        for(item of nums){
-            (item in obj) ? obj[item]= obj[item] + 1 : obj[item] = 1;
-        }
+    for(let i of nums){
+        (obj[i]) ? obj[i]++ :obj[i]=1
+    }
 
         const keys = Object.keys(obj);
         
@@ -18,4 +18,4 @@ var singleNumber = function(nums) {
 
 };
 
-console.log(singleNumber([1,2,2,3,3]));
+console.log(singleNumber([1,5,2,2,3,3]));

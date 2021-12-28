@@ -9,8 +9,7 @@ function containsduplicate(array) {
 
     let res = keys.every((item) => item<=1)
 
-
-    return res;
+    
 
 }
 
