@@ -5,11 +5,12 @@ function containsduplicate(array) {
     for(let i of array){
         (obj[i]) ? obj[i]++ :obj[i]=1
     }
-    let keys = Object.keys(obj);
+    let keys = Object.values(obj);
 
     let res = keys.every((item) => item<=1)
 
-    return keys;
+
+    return res;
 
 }
 
