@@ -7,7 +7,7 @@ var singleNumber = function(nums) {
         (obj[i]) ? obj[i]++ :obj[i]=1
     }
 
-        const keys = object.keys(obj);
+        const keys = Object.keys(obj);
         
         for(item in obj){
             if(obj[item]==1)
