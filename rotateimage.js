@@ -9,6 +9,8 @@ function rotatematrix(matrix){
   for(let row of matrix){
       row.reverse();
   }
+
+  return matrix;
 };
 
-rotatematrix("sd");
+console.log(rotatematrix([[1,2,3],[4,5,6],[7,8,9]]));
