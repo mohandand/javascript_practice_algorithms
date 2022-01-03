@@ -1,9 +1,9 @@
 
 function rotatematrix(matrix){
     let arra=[];
-  for(let i=matrix.length;i>=0;i--){
-        for(let j=0;j<matrix[i].length;j++){
-            arra.push();
+  for(let r=0 ;r<matrix.length;r++){
+        for(let c=r;c<matrix.length;c++){
+           [matrix[r][c],matrix[c][r]] = [matrix[c][r],matrix[r][c]]
         }
   }
 }
