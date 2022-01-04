@@ -42,8 +42,6 @@ function revstring(s){
         left++;
         right--;
     }
-
     return s;
 }
-
-console.log(revstring("RAJU"));
+console.log(revstring("RAJUU"));
