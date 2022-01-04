@@ -10,7 +10,7 @@
 // }
 
 // console.log(revstring("Mohan"));
-//Approach-2
+// Approach-2
 // let rev= '';
 // const revString = (str) => {
 //     for(let char of str)
@@ -24,8 +24,10 @@
 
 //one liner-third method
 //Approach-3
-const revstring = (str) => {
+// const revstring = (str) => {
 
-    return str.split("").reverse().join("");
-}
-console.log(revstring("RAJU"));
+//     return str.split("").reverse().join("");
+// }
+// console.log(revstring("RAJU"));
+
+//Approcah-4
