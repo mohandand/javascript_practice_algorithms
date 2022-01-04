@@ -44,4 +44,4 @@ function revstring(s){
     }
     return s;
 }
-console.log(revstring("RAJUU"));
+console.log(revstring(["h","e","l","l","o"]));
