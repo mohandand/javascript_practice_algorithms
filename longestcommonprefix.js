@@ -4,6 +4,7 @@ var longestCommonPrefix = function(strs) {
     //let maxPrefixLength = Math.min(...strs.map(str => str.length));
     for (let i = 0; i < strs[0].length; i++) {
       let char = strs[0][i];
+      console.log(char);
       if (strs.every(str => str[i] === char)) {
         prefix += char;
       } else {
@@ -14,4 +15,4 @@ var longestCommonPrefix = function(strs) {
   };
 
 
-console.log(longestCommonPrefix([]));
+console.log(longestCommonPrefix(["fowerab","alowab","blightab"]));
