@@ -1,3 +1,5 @@
+
+//Approach-1
 // var generate = function(numrows){
 
 //     var pascalT = new Array(numrows);
