@@ -17,7 +17,7 @@
 // }
 
 // console.log(generate(4));
-
+//Approach
 
 var generate = function(numRows) {
     var pascal = [];
