@@ -1,5 +1,6 @@
 
 //Approach-1
+
 // var generate = function(numrows){
 
 //     var pascalT = new Array(numrows);
@@ -19,7 +20,8 @@
 // }
 
 // console.log(generate(4));
-//Approach-2
+
+//Approach-
 
 var generate = function(numRows) {
     var pascal = [];
