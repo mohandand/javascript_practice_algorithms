@@ -2,7 +2,7 @@ function longpalindrom(str){
     if(str.length<1 || str === null) return '';
     let longest = '';
     for(let i = 0;i<str.length;i++){
-    let oddPalindrome = expandFromCenter(str,i,i)
+    let oddPalindrome = expandFromCenter(str,i,i)  //for addpalindrome we will have one center value
     let evenPalindrome = expandFromCenter(str,i-1,i)
 
     if(oddPalindrome.length > longest.length){
