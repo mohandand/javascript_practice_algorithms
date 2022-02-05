@@ -14,3 +14,4 @@ function climbTree(n){
 // lets say we have to climbe 3 tall tree 
 // to climb 3 we have to up 1step
 // to climb 2 to 3 we have to jump one step
+// to climb 1 to 3 we have to climb 1+1 step
