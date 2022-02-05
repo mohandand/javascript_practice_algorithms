@@ -10,3 +10,6 @@ function climbTree(n){
 
     return one
 }
+
+// lets say we have to climbe 3 tall tree 
+// to climb 3 we have to up 1step
