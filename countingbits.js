@@ -1,5 +1,6 @@
+//dynamic programing
 var countBits = function(n) {
-    let dp = [0]; //dynamic programing
+    let dp = [0]; 
     dp.length = n + 1;
     offset =  1;
     
