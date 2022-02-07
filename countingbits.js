@@ -1,5 +1,5 @@
 var countBits = function(n) {
-    let dp = [0];
+    let dp = [0]; //dynamic programing
     dp.length = n + 1;
     offset =  1;
     
@@ -10,7 +10,7 @@ for(let i = 1 ;i<n+1 ; i++)
     console.log(dif)
     dp[i] = 1+dp[dif]
 }
-  return dp 
+  return dp
     
 };
 
