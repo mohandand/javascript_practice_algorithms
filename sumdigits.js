@@ -1,11 +1,14 @@
 var addDigits = function(num) {
-    let temp = 0;
-    if(num.length !== 1  ){
-        temp = sum(num)
+    if (num < 10) return num;
+    const numString = num.toString();
+    const numArray = numString.split('');
+    let sum = 0;
+    
+    for (const numStr of numArray) {
+        sum += parseInt(numStr);
     }
-};
-function sum(numb){
-    let num1 = numb.split('')
-    let sum = num1.reduce(reducer)
-    return sum
-}
+    
+    return addDigits(sum);
+ };
+
+console.log(addDigits(128));
