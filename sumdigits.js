@@ -1,3 +1,5 @@
+//Sum of digits
+
 var addDigits = function(num) {
     if (num < 10) return num;
     const numString = num.toString();
