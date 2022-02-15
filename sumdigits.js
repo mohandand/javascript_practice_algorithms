@@ -1,4 +1,4 @@
-//Sum of digits
+//Sum of digits recursive approach
 
 var addDigits = function(num) {
     if (num < 10) return num;
@@ -10,7 +10,7 @@ var addDigits = function(num) {
         sum += parseInt(numStr);
     }
     
-    return addDigits(sum);
+    return addDigits(sum); 
  };
 
 console.log(addDigits(128));
