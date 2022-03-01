@@ -3,4 +3,4 @@ function findd(s,t){
     return t.split('').sort.find((char, i) => char == ssort[i] )
 }
 
-console.log("abcde","abcdef")
+console.log(findd("abcde","abcdef"));
