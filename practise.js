@@ -1,6 +1,6 @@
 function findd(s,t){
     let ssort = s.split('').sort();
-    return t.split('').sort().find((char, i) => char !== ssort[i] )
+    let tsort = t.split('').sort();
+    return tsort.find((char,i) => char !==ssort[i]);
 }
-
-console.log(findd("abcdef","abcghdef"));
+console.log(findd("abc","acd"))
