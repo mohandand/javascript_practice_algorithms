@@ -1,6 +1,11 @@
-function findd(s,t){
-    let ssort = s.split('').sort();
-    let tsort = t.split('').sort();
-    return tsort.find((char,i) => char !==ssort[i]); //find will return when ever it finds as per requirement
+function vowelscount(str){
+    let count = [];
+    for(letter of str){
+        if(letter.match(/[aeiou]/g)){
+            count++;
+        }
+    }
+    return count;
 }
-console.log(findd("abc","acd"))
+ 
+console.log(vowelscount("aeioubbbb"))
