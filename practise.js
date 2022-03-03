@@ -1,7 +1,7 @@
 function maxArea(array){
     let res = 0;
-    let left=array[0];
-    let right = array[array.length-1];
+    let left=0;
+    let right = array.length-1;
     while(left<right){
         let shortone = Math.min(array[left],array[right])
         let area = shortone * (right-left)
@@ -11,4 +11,4 @@ function maxArea(array){
   return res;
 }
 
-console.log(maxArea[1,8,6,2,5,4,8,3,7])
+console.log(maxArea([1,8,6,2,5,4,8,3,7]))
