@@ -1,4 +1,4 @@
-//First
+//First Approch
 function capitalize(title){
     let words = title.split(" ");
     let res = '';
