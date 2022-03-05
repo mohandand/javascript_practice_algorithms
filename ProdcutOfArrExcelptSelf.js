@@ -1,6 +1,6 @@
 var productExceptSelf = function(nums) {
     let prefix = [];
-    let postfix=[];
+    let postfix=[nums.length];
     let res=[];
     let intial = 1;
     let a =1
@@ -11,7 +11,7 @@ var productExceptSelf = function(nums) {
     }
     for(let i=nums.length-1;i>=0;i--){
         let mul = nums[i]*a;
-        postfix.push(mul);
+        postfix[i]=mul;
         a=mul
     }
     return postfix;
