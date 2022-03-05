@@ -10,9 +10,9 @@ var productExceptSelf = function(nums) {
     }
     for(let i=nums.length-1;i>nums.length;i--){
         let mul = nums[i]*intial;
-        prefix.push(mul);
-        postfix=mul
+        postfix.push(mul);
+        intial=mul
     }
-    return (prefix,postfix)
+    return prefix;
 };
 console.log(productExceptSelf([1,2,3,4]))
