@@ -13,6 +13,6 @@ var productExceptSelf = function(nums) {
         postfix.push(mul);
         intial=mul
     }
-    return prefix;
+    return postfix;
 };
 console.log(productExceptSelf([1,2,3,4]))
