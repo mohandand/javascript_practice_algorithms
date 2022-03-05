@@ -14,6 +14,11 @@ var productExceptSelf = function(nums) {
         postfix[i]=mul;
         a=mul
     }
-    return postfix;
+    for(let i=1;i<nums.length-1;i++){
+       res[0]=postfix[1]
+       res[nums.length-1] =prefix[nums.length-2]
+       res[i] = prefix[i-1]*postfix[i+1]
+    }
+    return res;
 };
-console.log(productExceptSelf([1,2,3,4]))
+console.log(productExceptSelf([0,0]))
