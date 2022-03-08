@@ -12,4 +12,4 @@ function houseRob(nums){
     }
     return maxAtOneBefore;
 }
-console.log(houseRob([1,2,3,1]))
+console.log(houseRob([2,7,9,3,1]))
