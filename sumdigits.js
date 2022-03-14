@@ -1,4 +1,4 @@
-//Sum of digits recursive approach and best app
+//Sum of digits recursive approach and best approch
 
 var addDigits = function(num) {
     if (num < 10) return num;
