@@ -10,7 +10,7 @@ var addDigits = function(num) {
         sum += parseInt(numStr);
     }
     
-    return addDigits(sum); 
+    return addDigits(sum);  //recursive calling
  };
 
 console.log(addDigits(128));
