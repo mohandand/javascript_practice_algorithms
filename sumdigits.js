@@ -13,4 +13,4 @@ var addDigits = function(num) {
     return addDigits(sum);  //recursive calling
  };
 
-console.log(addDigits(128));
+console.log(addDigits(128));//calling function
