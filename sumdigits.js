@@ -7,7 +7,7 @@ var addDigits = function(num) {
     let sum = 0;
     
     for (const numStr of numArray) {
-        sum += parseInt(numStr);
+        sum += parseInt(numStr); //converting string to int
     }
     
     return addDigits(sum);  //recursive calling
