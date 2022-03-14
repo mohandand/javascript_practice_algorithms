@@ -15,4 +15,4 @@ var addDigits = function(num) {
 
 console.log(addDigits(128));//calling function
 
-// output should be 1+2+8
+// output should be 1+2+8 = 11
