@@ -1,14 +1,9 @@
-function maxArea(array){
-    let res = 0;
-    let left=0;
-    let right = array.length-1;
-    while(left<right){
-        let shortone = Math.min(array[left],array[right])
-        let area = shortone * (right-left)
-        if(area>res)  res=area;
-       (array[left]>array[right]) ? right-- : left++ 
-    }
-  return res;
+function add(x){
+  return function adds(y){
+    return x+y;
+  }
 }
 
-console.log(maxArea([1,8,6,2,5,4,8,3,7]))
+let sum = add(5);
+
+console.log(sum(10))
