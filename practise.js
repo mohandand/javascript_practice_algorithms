@@ -1,9 +1,14 @@
+let count= 0;
 function add(x){
   return function adds(y){
-    return x+y;
+    return count++
   }
 }
 
-let sum = add(5);
+let sum = add();
 
-console.log(sum(10))
+console.log(sum())
+sum()
+sum()
+console.log(sum())
+
