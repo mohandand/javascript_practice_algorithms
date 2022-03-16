@@ -1,5 +1,5 @@
 console.log(y())
 
-const y = function(){
+var y = function(){
   return 0;
 }
