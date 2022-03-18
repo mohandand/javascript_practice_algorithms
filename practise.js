@@ -10,4 +10,4 @@ function repat(a,b){
     return -1
 }
 
-console.log(repat("a","aaa"))
+console.log(repat("abcd","cdabcdab"))
