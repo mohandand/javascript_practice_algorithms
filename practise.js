@@ -1,18 +1,13 @@
-
-function bas(prices){
-    let buy = prices[0];
-    let profit=0;
-
-    for(let i=1;i<prices.length;i++){
-        if(buy>prices[i]){
-            buy=prices[i]
-        }
-        else{
-            profit = Math.max(prices[i]-buy, profit)
-        }
-    }
-
-    return profit;
+function rot(array,k){
+    let rotate = k % array.length;
+    console.log(rotate)
+    if(array.length==0) return array
+    let temp =  array.slice(0,array.length-rotate);
+    array.splice(0,array.length-rotate);
+    console.log(array)
+    array.push(...temp)
+     return array;
 }
 
-console.log(bas([7,1,5,3,6,4]));
+console.log(rot([1,2,3,4,5,6],2))
+
