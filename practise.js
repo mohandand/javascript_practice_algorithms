@@ -1,13 +1,6 @@
-function movezeros(array){
-    let res =[];
-    let zero = [];
-    for(let i=0;i<array.length;i++){
-        if(array[i]!=0){
-            res.push(array[i])     
-        }else{
-            zero.push(array[i])
-        }
-    }
-    return [...res,...zero]
-}
-console.log(movezeros(([0,1,0,3,12])))
+function rotatematrix(x){
+   let absres = Math.abs(x).toString().split("").reverse().join("")
+   return absres*Math.sign(x)
+  };
+   
+  console.log(rotatematrix(-123));
