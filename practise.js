@@ -1,13 +1,13 @@
-function repat(a,b){
-    let num = Math.ceil(b.length/a.length);
-    if(a.repeat(num).includes(b)){
-        return num;
+function movezeros(array){
+    let res =[];
+    let zero = [];
+    for(let i=0;i<array.length;i++){
+        if(array[i]!=0){
+            res.push(array[i])     
+        }else{
+            zero.push(array[i])
+        }
     }
-    if(a.repeat(num+1).includes(b)){
-        return num+1;
-    }
-
-    return -1
+    return [...res,...zero]
 }
-
-console.log(repat("abcd","cdabcdab"))
+console.log(movezeros(([0,1,0,3,12])))
