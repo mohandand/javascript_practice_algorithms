@@ -10,9 +10,10 @@ function arrayself(array){
    for(let i=0;i<array.lenght;i++){
       righa[i] = rightpostion;
       righa[i]*=rightpostion;
-      right[i]*=lefta[i]
+      righa[i]*=lefta[i]
 
    }
 
    return righa;
 }
+console.log(arrayself([1,2,3]))
