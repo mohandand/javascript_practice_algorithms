@@ -1,17 +1,13 @@
-//Take input and output variable
-//Create array with all aplhabets.
-// remove other than alphabets form a string
-// loop through string and find it index and push it to res array.
-
-function postion(str){
-    let res = [];
-    let alpha = "abcdefghijklmenopqrstuvwxyz"
-    let alphabets = str.toLowerCase().replace(/[^a-zA-Z]/g,'');
-    let alphaarray = alpha.split("")
-    for(let char of alphabets){
-        res.push(alphaarray.indexOf(char) +1 )
+//loop through string and store it in object format
+//loop thorhgh object values and find for not equal to one
+function unique(str){
+    let obj ={};
+    for(let char of str){
+        obj[char] ? obj[char]++ :obj[char] = 1
     }
+    let res = Object.values(obj).every((value) => value == 1 )
+
     return res;
 }
 
-console.log(postion("abc123"))
+console.log(unique("abcdefgaz"))
