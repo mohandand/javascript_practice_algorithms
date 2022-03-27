@@ -2,14 +2,14 @@
 
 // on next day if buy is less than next day value then sell it other sie buy it and do the profit calculation
 
-function bss(arry){
-  let buy= arry[0];
+function bss(prices){
+  let buy= prices[0];
   let profit=0;
-  for(let i=1;i<arry.length;i++){
-    if(buy > arry[i]){
-      buy = arry[i]
+  for(let i=1;i<prices.length;i++){
+    if(buy > prices[i]){
+      buy = prices[i]
     }else{
-      profit = Math.max(buy-arry[i] , profit)
+      profit = Math.max(prices[i]-buy , profit)
     }
   }
   return profit;
