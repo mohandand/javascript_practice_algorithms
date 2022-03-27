@@ -5,5 +5,11 @@
 function bss(arry){
   let buy= arry[0];
   let profit=0;
-  for(let i=0;i<arry.len)
+  for(let i=1;i<arry.length;i++){
+    if(buy > arry[i]){
+      buy = arry[i]
+    }else{
+      profit = Math.max(buy-arry[i] , profit)
+    }
+  }
 }
