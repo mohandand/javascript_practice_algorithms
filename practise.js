@@ -12,4 +12,6 @@ function bss(arry){
       profit = Math.max(buy-arry[i] , profit)
     }
   }
+  return profit;
 }
+console.log(bss([7,1,5,3,6,4]))
