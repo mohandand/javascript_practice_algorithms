@@ -16,4 +16,4 @@ function ia(arr1,arr2){
     }
     return res
 }
-console.log(ia([1,2,3,4],[1,2,3]))
+console.log(ia([1,2,3,4,3],[1,2,3,3]))
