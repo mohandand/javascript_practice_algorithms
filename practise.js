@@ -11,7 +11,9 @@ function ia(arr1,arr2){
     }
     for(let k of arr2){
         if(obj1[k]>0){
-            res.push(item)
+            res.push(k)
         }
     }
+    return res
 }
+console.log(ia([1,2,3,4],[1,2,3]))
