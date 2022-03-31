@@ -7,6 +7,7 @@ function findEvenIndex(arr)
     count = count + arr[i]
     stsum[i] = count;
   }
+  count=0
   for(let i=arr.length-1;i>=0;i--){
     count = count + arr[i]
     revsum[i] = count;
@@ -14,4 +15,4 @@ function findEvenIndex(arr)
   return revsum
 }
 
-console.log(findEvenIndex([1,2,3,-4]))
+console.log(findEvenIndex([1,100,50,-51,1,1]))
