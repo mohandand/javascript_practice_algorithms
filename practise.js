@@ -1,27 +1,12 @@
-function anagram(strs){
-    var groupAnagrams = function(strs) {
-        let sortedarray = [];
-        let sortedObject = {}
-        let res =[];
-        let temp =[];
-    for(let i=0;i<strs.length;i++){
-        let sortedword = strs[i].split('').sort().join("")
-        sortedarray.push(sortedword)
-    }
-    for(let i=0;i<sortedarray.length;i++){
-        sortedObject[sortedarray[i]] ? sortedObject[sortedarray[i]]++ : sortedObject[sortedarray[i]] =1
-    }
-   for(let item in sortedObject){
-       for(var i=0 ;i<sortedarray.length;i++){
-           if(item == sortedarray[i]){
-               temp.push(strs[i])
-           }
-       }
-          res.push([...temp])
-           temp.length=0;
-   }
-   return res
-};
-}  
+function findEvenIndex(arr)
+{
+  let stsum = []
+  let count = 0;
+  for(let i=0;i<arr.length;i++){
+    count = count + arr[i]
+    stsum[i] = count;
+  }
+  return stsum;
+}
 
-console.log(anagram(["cat","act","bat","tab","atb","tac"]))
+console.log(findEvenIndex([1,2,3,-4]))
