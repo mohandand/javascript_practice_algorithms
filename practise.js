@@ -1,18 +1,15 @@
-function findEvenIndex(arr)
-{
-  let stsum = []
-  let revsum =[]
-  let count = 0;
-  for(let i=0;i<arr.length;i++){
-    count = count + arr[i]
-    stsum[i] = count;
+function generateHashtag (str) {
+  if(str.lenght===0) return " "
+  let arr=[];
+  let strarr = str.split(' ')
+  let res = '#'
+  for(let i=0 ;i<strarr.length;i++){
+    let temp = strarr[i].charAt(0).toUpperCase();
+    temp = strarr[i].replace(strarr[i][0],temp)
+    arr.push(temp)
   }
-  count=0
-  for(let i=arr.length-1;i>=0;i--){
-    count = count + arr[i]
-    revsum[i] = count;
-  }
-  return revsum
+  let cstring = arr.join('')
+  return res+cstring
 }
 
-console.log(findEvenIndex([1,100,50,-51,1,1]))
+console.log(generateHashtag("hello All Iam mohan"))
