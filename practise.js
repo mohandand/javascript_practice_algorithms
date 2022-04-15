@@ -1,13 +1,15 @@
-var maxProfit = function(prices) {
-  let buy = prices[0];
-  let profit =0;
-      for(let i=1;i<prices.length;i++){
-          if(buy>prices[i]){
-              buy = prices[i]
-          }else{
-              profit = Math.max(profit,prices[i]-buy)
-          }
-      }
-  return profit
-  };
-  console.log(maxProfit([7,1,5,3,6,2]));
+var productExceptSelf = function(nums) {
+  let len = nums.length
+  let leftarr = [];
+  let rightarr = [];
+  let leftmul =1;
+  let rightmul=1
+  for(let i=0,j=len-1;i<len && j>=0;i++,j--){
+      leftarr[i] = leftmul
+      leftmul = leftmul*nums[i]
+       leftarr[j] = rightmul
+      rightmul = rightmul* nums[j]
+  }
+  console.log(leftarr,rightarr)
+};
+console.log(productExceptSelf([1,2,3]))
