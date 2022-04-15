@@ -1,19 +1,22 @@
-var productExceptSelf = function(nums) {
-  let len = nums.length
-  let leftarr = [];
-  let rightarr = [];
-  let leftmul =1;
-  let rightmul=1
-  let res=[]
-  for(let i=0,j=len-1;i<len && j>=0;i++,j--){
-      leftarr[i] = leftmul
-      leftmul = leftmul*nums[i]
-      rightarr[j] = rightmul
-      rightmul = rightmul* nums[j]
+function maxsubarray(nums){
+  let endIndex = 0;
+  let currMax=nums[0];
+  let globalMax=nums[0]
+  for(let i=1;i<nums.length;i++){
+      currMax = Math.max(nums[i] , nums[i]+currMax)
+      if(currMax>globalMax){
+        globalMax = currMax;
+        endIndex =i;
+      }
   }
-  for(let i=0;i<len;i++){
-    res[i] = leftarr[i]*rightarr[i]
+  let cond=0
+  let temp=endIndex
+  for(let i=endIndex;i>=0;endIndex--){
+     cond = cond+nums[endIndex];
+    if(cond==globalMax){
+        return nums.slice(endIndex,temp+1)
+    }
   }
- return res
-};
-console.log(productExceptSelf([1,2,3,4]))
+
+}
+console.log(maxsubarray([-2,1,-3,4,-1,2,1,-5,4]))
