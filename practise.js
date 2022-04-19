@@ -1,13 +1,11 @@
-function uni(str){
-  let obj ={};
+function vcount(str){
+  let count=0
   for(let char of str){
-    obj[char]?obj[char]++:obj[char]=1
+     if(char.match(/[aeiou]/g)){
+       count++
+     }
   }
-  for(let item in obj){
-    if(obj[item]==1){
-      return item
-    }
-  }
-  return true
+  return count
 }
-console.log(uni("11223aab"))
+
+console.log(vcount("aeioud"))
