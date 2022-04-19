@@ -1,14 +1,11 @@
-var maxProduct = function(nums) {
-  let maxsoFar=nums[0]
-  let minsoFar=nums[0]
-  let res = nums[0]
-  let tempmaxsoFar;
-  for(let i=1;i<nums.length;i++){
-      tempmaxsoFar = Math.max(nums[i],maxsoFar * nums[i],minsoFar * nums[i])
-      minsoFar = Math.min(nums[i],maxsoFar * nums[i],minsoFar * nums[i])
-      maxsoFar = tempmaxsoFar
-      res = Math.max(res, maxsoFar)
-  }
-  return res
-};
-console.log(maxProduct([2,3,-2,4,-3]))
+function alpha(str){
+  let alpha = "abcdefghijklmnopqrstuvwxyz"
+  let alphaarra = alpha.split('');
+  let inputstr = str.toLowerCase().replace(/[^a-zA-Z]/g, '');
+  let res =[];
+   for(let i of str){
+     res.push(inputstr.indexOf(i) + 1)
+   }
+   return res;
+}
+console.log(alpha("abcdeg"))
