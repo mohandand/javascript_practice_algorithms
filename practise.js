@@ -1,11 +1,7 @@
-function vcount(str){
-  let count=0
-  for(let char of str){
-     if(char.match(/[aeiou]/g)){
-       count++
-     }
-  }
-  return count
+function lcp(strarr){
+ for(let i =0 ;i<strarr[0].length;i++){
+   for(let j=0;j<strarr.length;j++){
+        if(strarr[0][i] !== strarr[j][i]) return strarr[0].slice(0,i)
+   }
+ }
 }
-
-console.log(vcount("aeioud"))
