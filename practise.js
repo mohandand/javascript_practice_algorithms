@@ -10,4 +10,4 @@ function uni(str){
   }
   return true
 }
-console.log(uni("123abcc"))
+console.log(uni("123ab"))
