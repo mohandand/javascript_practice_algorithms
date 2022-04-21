@@ -12,4 +12,4 @@ function counts(teamA, teamB) {
 
 }
 
-console.log(counts([1, 4, 2, 4],[3, 5]))
+console.log(counts([1, 4, 2, 4],[3, 5])
