@@ -1,7 +1,11 @@
-var fib = function(n) {
-  if (n <= 1)
-      return n;
-  return fib(n-1) + fib(n-2);
-};
+function substring(s){
+  let res =[];
+  for(let i = 0;i<s.length;i++){
+      for(let j= i+1;j<s.length;j++){
+           res.push(s.substring(i,j))
+      }
+  }
+  return res;
+}
 
-console.log(fib(1))
+console.log(substring("abc"))

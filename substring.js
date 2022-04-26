@@ -5,5 +5,7 @@ function substring(s){
              res.push(s.substring(i,j))
         }
     }
-    return 
+    return res;
 }
+
+console.log(substring("abc"))
