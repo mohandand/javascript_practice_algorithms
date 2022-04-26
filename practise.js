@@ -1,23 +1,17 @@
-var longestPalindromeSubseq = function(s) {
-  let maxlength = 0;
-  for(let i=0;i<=s.length;i++){
-      for(let j= i+1;j<=s.length;j++){
-          let temp = s.substring(i,j)
-          if(isPalindrome(temp)){
-              maxlength = Math.max(maxlength, temp.length)
-          }
-      }
-  }
-  return maxlength
-  function isPalindrome(str){
-      let l=0;
-      let r=str.length-1;
-      while(l<=r && str.charAt(l)===str.charAt(r)){
-          l++;
-          r--;
-      }
-      return l>=r;
-  }
+var countSubstrings = function(s) {
+    let count=0;
+    const arr=[];
+    for(let i=0;i<s.length;i++){
+        countPalindrome(s,i,i); // odd length
+        countPalindrome(s,i,i+1); // even length
+    }
+    return count;
+    function countPalindrome(str,left,right){
+        while(left>=0 && right<str.length && str[left]===str[right]){
+			arr.push(str.substring(left,right+1)); // if you want those substrings as well
+            count++;
+            left--;
+            right++;
+        }
+    }
 };
-
-console.log(longestPalindromeSubseq("abc"))
