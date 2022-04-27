@@ -4,10 +4,10 @@ function findLargestDiff(array){
     for(let i=1;i<array.length;i++){
         if(array[i]>currenmin && (array[i]-currenmin>currmaxdiff)){
             currmaxdiff = array[i]-currenmin
-        }else if(array[i]<currenmin){
+        }else if(array[i]<=currenmin){
             currenmin =array[i]
         }
     }
     return currmaxdiff
 }
-console.log(findLargestDiff([7, 8, 4, 9, 9, 15, 3, 1, 10]))
+console.log(findLargestDiff([20, 3, 1, 10]))
