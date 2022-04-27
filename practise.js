@@ -1,27 +1,40 @@
-/**
- * @param {string} s
- * @return {string}
- */
- var longestPalindrome = function(s) {
-    let max=0;
-   const arr=[];
-   for(let i=0;i<s.length;i++){
-       countPalindrome(s,i,i); // odd length
-       countPalindrome(s,i,i+1); // even length
-       
-   }
-   return arr[0];
-   function countPalindrome(str,left,right){
-       while(left>=0 && right<str.length && str[left]===str[right]){
-           let temp =str.substring(left,right+1);
-           if(max > temp.length){
-               max  = max
-           }else{
-              max = temp.length
-              arr[0] =temp
-           }
-           left--;
-           right++;
-       }
-   }
-};
+// function minarray(array,target){
+//     array.sort((a,b) => {return b-a})
+//     let sum =0;
+//     let count =0;
+//   for(let i=0;i<array.length;i++){
+//       sum+=array[i]
+//       count++
+//       if(sum>=target){
+//           return count;
+//       }
+//   }
+// }
+// console.log(minarray([1,4,45,6,0,19],51))
+
+// function minarray(array,target){
+//     let count =0;
+//     let sum =0;
+//     let end ;
+//     for(let i =0;i<array.length;i++){
+//         sum = sum+array[i]
+//         count++
+//         if(sum>target){
+//             end =i;
+//             break;
+//         }
+//     }
+//     for(let i=0;i<array.length;i++){
+//         sum = sum - array[i]
+//         count--;
+//         if(sum>target){
+//             continue
+//         }else{
+//             console.log(array.slice(i,end+1))
+//             return count+1
+//         }
+//     }  
+// }
+console.log(minarray([1,4,45,6,0,19],51))
+console.log(minarray([1,10,5,2,7],9))
+console.log(minarray([9,4,1,23,3,26],25))
