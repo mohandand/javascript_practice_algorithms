@@ -10,4 +10,4 @@ function findLargestDiff(array){
         }
     }
 }
-console.log(findLargestDiff([7, 8, 8, 9, 9, 1, 3, 1, 10]))
+console.log(findLargestDiff([7, 8, 4, 9, 9, 15, 3, 1, 10]))
