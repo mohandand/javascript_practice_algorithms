@@ -1,13 +1,10 @@
-function findLargestDiff(array){
-    let currenmin = array[0];
-    let currmaxdiff = 0;
-    for(let i=1;i<array.length;i++){
-        if(array[i]>currenmin && (array[i]-currenmin>currmaxdiff)){
-            currmaxdiff = array[i]-currenmin
-        }else if(array[i]<=currenmin){
-            currenmin =array[i]
-        }
+function sumofdigits(n){
+    if(n==0){
+        return n
     }
-    return currmaxdiff
+    let dig = n%10
+    n = Math.floor(n/10)
+    return dig + sumofdigits(n);
 }
-console.log(findLargestDiff([20, 3, 1, 10]))
+
+console.log(sumofdigits(1232))
