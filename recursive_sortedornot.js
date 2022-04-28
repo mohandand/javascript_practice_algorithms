@@ -6,4 +6,3 @@ function sortedornot(arr,index =0){
 }
 
 console.log(sortedornot([1,2,6,4,5]))
-
