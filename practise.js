@@ -1,9 +1,13 @@
-function sortedornot(arr,index =0){
-    if(index ==arr.length-1){
-        return true
+function linearSearch(arr,target,index){
+    if(arr.length === index){
+        return -1
     }
-   return (arr[index]<arr[index+1] && sortedornot(arr , index+1))
+
+    if(arr[index] === target){
+        return index
+    }
+    
+    return linearSearch(arr,target,index+1)
 }
 
-console.log(sortedornot([1,2,6,4,5]))
-
+console.log(linearSearch([1,23,4,5] ,2,0))
