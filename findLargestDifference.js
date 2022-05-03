@@ -1,5 +1,5 @@
 
-// Approch-2:
+// Approch-1:
 
 function findLargestDiff(array){
     let currenmin = array[0];
