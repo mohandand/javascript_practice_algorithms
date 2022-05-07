@@ -15,7 +15,7 @@
 //     }
     
 //     return array
-// }
+// }as
 
 // console.log(openorSenior([[18,20],[61,12],[21,21],[78,9]]));
 
