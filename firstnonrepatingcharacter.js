@@ -46,7 +46,7 @@
 // }
 // console.log(firstNonRepeatChar("aabcbcdeedfadad"));
 
-//Appraoch-3 best
+//Appraoch-3
 const firstNonRepeatChar = (string) => {
     const obj= {}
     for(let item of string)
