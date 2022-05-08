@@ -1,5 +1,5 @@
 
-//Appraoch-1
+//Appraoch
 // const firstNonRepeatChar = (string) => {
 
 //    let  strarray = string.split('');
