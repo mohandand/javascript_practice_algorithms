@@ -21,4 +21,4 @@ return value
     
 };
 
-console.log(romanToInt("XX"));
+console.log(romanToInt("XXI"));
